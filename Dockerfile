@@ -2,7 +2,7 @@ FROM alpine:latest
 
 RUN apk update \
     && apk upgrade \
-    && apk add --no-cache python py-pip bash vi
+    && apk add --no-cache python py-pip bash
 
 RUN mkdir /var/lib/apisoft
 RUN pip install Flack
